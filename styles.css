@@ -1,0 +1,210 @@
+  /* 기본 스타일 */
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 메인 컨테이너 */
+  .container {
+    margin-top: 50px;
+  }
+
+  /* 캔버스 스타일 */
+  canvas {
+    border: 1px solid #ccc; /* 캔버스 테두리 */
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* 버튼 스타일 */
+  button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* 모달 스타일 */
+  #modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  /* 모달 내 버튼 스타일 */
+  #modal button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #modal button:hover {
+    background-color: #C70039;
+  }
+
+
+  #modal2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  #modal2 button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #00b56d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #modal2 button:hover {
+    background-color: #C70039;
+  }
+
+  #overlay2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  #close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  #welcome {
+    font-size: 30px;
+  }
+
+  #currentCash {
+    position: absolute;
+    left: 7%;
+    top: 40%;
+    font-size: 20px;
+  }
+
+  #currentProtection {
+    position: absolute;
+    left: 7%;
+    top: 45%;
+    font-size: 20px;
+  }
+
+  #forcePercentage {
+    position: absolute;
+    left: 7%;
+    top: 55%;
+    font-size: 20px;
+  }
+
+  #upgradeCost {
+    position: absolute;
+    left: 7%;
+    top: 60%;
+    font-size: 20px;
+  }
+
+  #sellCost {
+    position: absolute;
+    left: 7%;
+    top: 65%;
+    font-size: 20px;
+  }
+
+  #title {
+    font-size: 40px;
+    position: absolute;
+    margin: -20px 10px;
+  }
+
+  #currentImage {
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    font-size: 20px;
+  }
+
+  #buyone {
+    width: 30%;
+    height: 30%;
+  }
+  
+  #buytriple {
+    width: 30%;
+    height: 30%;
+  }
+
+  #endingItem {
+    position: absolute;
+    left: 7%;
+    top: 70%;
+    font-size: 20px;
+  }
+
+  #trainingCanvas {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: 70%; 
+  }

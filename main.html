@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4반 강화하기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">4반 강화하기</h1>
+    <!-- 캔버스 -->
+    <canvas id="imageCanvas"></canvas>
+    <h3 id="currentCash">현재 보유중인 금액 : 1000000원</h3>
+    <h3 id="currentProtection">현재 보유중인 방지권 개수 : 0</h3>
+    <h3 id="forcePercentage">강화 확률 : 100%</h3>
+    <h3 id="upgradeCost">강화 비용 : 300원</h3>
+    <h3 id="sellCost">판매 가격 : 0원</h3>
+    <h3 id="needprotection"></h3>
+    <h3 id="endingItem"></h3>
+    <h1 id="imageName"></h1>
+    <br>
+    <h2 id="result"></h2>
+    <!-- 버튼 -->
+    <button id="switchButton" onclick="strengthen()">강화하기</button>
+    <button id="GotoTraining" onclick="openTraining()">훈련장</button>
+    <button id="GotoShop" onclick="openShop()">상점</button>
+    <button id="protect" onclick="protection()">복구</button>
+    <button id="sell" onclick="sell()">판매</button>
+    <button id="Goto1step" onclick="goto1step()">1단계로</button>
+
+    <!-- 모달과 오버레이 -->
+    <div id="overlay" onclick="closeTraining()"></div>
+    <div id="modal">
+      <p id="welcome">훈련장에 오신 것을 환영합니다!</p>
+      <canvas id = TrainingCanvas></canvas> 
+      <button id = "useWeapon" onclick = "useWeapon()">사용하기</button>
+      <button id="close" onclick="closeTraining()">닫기</button>
+      </div>
+    </div>
+
+    <!-- 샵과 오버레이2-->
+    <div id="overlay2" onclick="closeShop()"></div>
+    <div id="modal2">
+      <p id="welcome">상점에 오신 것을 환영합니다!</p>
+      <button id="buyone">방지권 1개 구매하기(100만원)</button>
+      <button id="buytriple">방지권 3개 구매하기(250만원)</button>
+      <button id="close" onclick="closeShop()">닫기</button>
+      <h3 id="shopCurrentCash"></h3>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
