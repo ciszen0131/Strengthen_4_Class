@@ -1,6 +1,9 @@
 const canvas = document.getElementById('imageCanvas');
 const ctx = canvas.getContext('2d');
 
+canvas.height = 400;
+canvas.width = 500;
+
 // 이미지 리스트와 초기 설정
 const imagelist = [
   "1.png", "2.png", "3.png", "4.png", "5.png", "6.jpeg", "7.jpg",
